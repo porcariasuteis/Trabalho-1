@@ -26,11 +26,13 @@ Máquina n1-standard-4 (4 vCPUs, 15 GB de memória) e 30 GB de disco rodando Deb
 A escolha da utilização de duas máquinas, uma com TCP e outra com MPTCP é justificada porque os resultados ao desabilitar o MPTCP no kernel estavam inconsistentes.
 
 As principais dificuldades foram inicialmente relacionadas à falta de prática com o simulador e a linguagem Python. A compilação do Kernel foi trabalhosa, uma vez que o tutorial do projeto não é exatamente passo a passo, assumindo que o usuário tenha experiência prévia.
+Os autores no artigo não utilizam simuladores convencionais e o simulador citado pelos autores (cedido pela equipe do MPTCP) não está acessível publicamente.
 Existiam trabalhos anteriores tentando reproduzir o experimento citado no artigo, e um destes trabalhos foi utilizado como base na construção tanto da figura quanto da tabela. O trabalho que serviu de referência foi de autoria de Jean-Luc Watson, https://github.com/jlwatson , mas no trabalho original os valores não eram exibidos integralmente por conta de uma falha de comunicação entre o Iperf https://iperf.fr/ e o Mininet, esta mesma falha é reportada em outros testes similares, inclusive por outros alunos que tentaram reproduzir o artigo. Ao entrar em contato com o autor, obtive a seguinte resposta
 
 **...“If I recall correctly, it came down to issues with the simulation, even though the overall setup for the experiment is correct. We were having a great deal of trouble getting Mininet to limit the bandwidth on each link when running the iperf tests, which might be due to the specific version we're using (2.2.2).”**
 
 Com base na resposta verificou-se a saída dos testes, e muitos dos testes realizados via Iperf não recebiam resposta correta. Em algumas situações os testes eram computados como tráfego de 0KB/s, em outras situações o limite de largura de banda estipulado no código era ultrapassado (transmissão de 500 Mb/s em um canal de 100 Mb/s) , gerando valores médios alterados para mais ou menos.
+Para o teste da Fat-Tree foi utilizado como base um trabalho de Pranav Yerabati Venkata, levemente modificado para atender a nossa proposta. O repositório original pode ser encontrado em https://github.com/pranav93y
 
 Durante o desenvolvimento do trabalho, várias fontes foram consultadas, incluindo o vídeo [Fishbowl Seminar: Jellyfish: Networking Data Centers Randomly](https://youtu.be/yEjcZC34qNo "Fishbowl Seminar: Jellyfish: Networking Data Centers Randomly") de um dos autores P. Brighten Godfrey, aonde algumas considerações são expostas de forma distinta ao trabalho original. Godfrey afirma que a topologia o protocolo ECMP não deve ser considerado quando utilizamos a topologia Jellyfish, e que o TCP e o MPTCP funcionam de forma muito próxima para a Jellyfish, sendo o mais importante o algoritmo de roteamento. Muito embora seja possível observar tendências confirmem estas considerações, elas não estão explícitas no artigo. Outro ponto não explicado integralmente se refere a utilização de quantidades de servidores diferentes na comparação da Jellyfish e da Fat-tree.
 
@@ -43,7 +45,11 @@ Os resultados obtidos foram fiéis ao original em vários pontos, porém foram d
 Na tabela os resultados foram mais divergentes pela limitação do ambiente de testes. No teste realizado foram utilizados 20 servidores e 32 switches com 6 portas cada, outras configurações foram testadas, porém a que melhor conseguiu realizar os testes até o fim foi esta. Em algumas ocasiões a simulação terminava sem resultados, mas não foi possível determinar se o problema era no código ou na máquina virtualizada, sendo necessário reiniciar a instância virtualizada e retomar os testes. A limitação da topologia testada torna difícil uma comparação mais aproximada com o trabalho original, porém as tendências são similares, sendo a mais notável a melhora de desempenho quando utilizamos o jellyfish com mais fluxos e com o MPTCP. Os testes com um fluxo funcionam razoavelmente bem, porém quando utilizamos o MPTCP e oito fluxos os resultados são insatisfatórios, provavelmente porque a quantia de servidores, switches e portas não cria uma diversidade muito grande de caminhos. Os resultados abaixo representam a saída do programa sendo executado uma vez para o TCP e uma para o MPTCP.
 
 **TCP**
-<p align="left">  <img src="https://image.ibb.co/d3F0HU/print_tcp.png" alt="dados_originais" border="0"></p>
+<p align="left">  <img src="https://image.ibb.co/cCMBbp/print_tcp.png" alt="dados_originais" border="0"></p>
+
+**MPTCP**
+<p align="left">  <img src="https://image.ibb.co/hSgKwp/print_mptcp.png" alt="dados_originais" border="0"></p>
+
 
 **Médias de 3 execuções válidas**
 
@@ -55,7 +61,7 @@ Na tabela os resultados foram mais divergentes pela limitação do ambiente de t
 | 20 Servers  | ECMP  | 8-shortest paths  |
 | ------------ | ------------ | ------------ |
 | MTCP 1 Flow |  64.3%  |  64.4%  |
-| MTCP 8 Flow  | 79.2%   | 64.8% |
+| MTCP 8 Flow  | 69.2%   | 67.8% |
 
 ##### Como utilizar o código
 ##### 1- Crie duas instâncias virtuais no serviço Google Cloud (Você pode utilizar sua própria máquina caso tenha as mesmas características descritas) com a seguinte configuração:
@@ -65,8 +71,14 @@ Na tabela os resultados foram mais divergentes pela limitação do ambiente de t
 - Debian GNU/Linux 9 (Strech)
 - Tráfego HTTP e HTTPS permitidos
 
-##### 2- Instalar o git com ( sudo apt install git)
-##### 3- Clonar o repositório do mininet (git clone git://github.com/mininet/mininet.git)
+##### 2- Instalar o git:
+```
+sudo apt install git
+```
+##### 3- Clonar o repositório do mininet:
+```
+git clone git://github.com/mininet/mininet.git
+```
 ##### 4- Executar:
 ```
 cd mininet
@@ -92,3 +104,24 @@ make modules
 make modules_install
 make install
 ```
+**7- Conectar a instância com TCP (Via painel de controle do google cloud ou cliente SSH de sua preferência)**
+8- Clonar o git do projeto:
+```
+git clone https://github.com/fernandonakayama/tp1.git
+cd tp1
+sudo python tcp.py
+```
+Os resultados de TCP com 1 e 8 fluxos com ECMP e K-shortest-Paths para topologia Jellyfish serão exibidos ao término da execução.
+
+Para os resultados com 8 fluxos em Fat-Tree será necessário mais um terminal de conexão ao servidor (via painel do Google Cloud ou cliente SSH de sua preferência)
+Terminal 1
+```
+cd fattree
+cd scripts
+sudo sh ./controller_ecmp.sh
+```
+Terminal 2
+```
+cd tp1
+cd scripts
+
