@@ -151,3 +151,4 @@ Os resultados da topologia Fat-Tree são obtidos executando o script fattree.sh
 sudo sh ./fattree.sh
 ```
 O resultado será exibido após a execução do script.
+<p align="left">  <img src="https://image.ibb.co/bwPHZ9/fat_mptcp.png" alt="dados_originais" border="0"></p>
