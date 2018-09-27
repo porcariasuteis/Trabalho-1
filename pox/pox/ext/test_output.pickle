@@ -1,0 +1,476 @@
+(dp0
+S'output'
+p1
+(lp2
+(lp3
+S'------------------------------------------------------------'
+p4
+aS'Client connecting to 10.0.9.1, TCP port 5001'
+p5
+aS'TCP window size: 85.3 KByte (default)'
+p6
+aS'------------------------------------------------------------'
+p7
+aS'[  9] local 10.0.8.1 port 48788 connected with 10.0.9.1 port 5001'
+p8
+aS'[  8] local 10.0.8.1 port 48786 connected with 10.0.9.1 port 5001'
+p9
+aS'[ 10] local 10.0.8.1 port 48792 connected with 10.0.9.1 port 5001'
+p10
+aS'[  6] local 10.0.8.1 port 48782 connected with 10.0.9.1 port 5001'
+p11
+aS'[  4] local 10.0.8.1 port 48780 connected with 10.0.9.1 port 5001'
+p12
+aS'[  3] local 10.0.8.1 port 48778 connected with 10.0.9.1 port 5001'
+p13
+aS'[  7] local 10.0.8.1 port 48784 connected with 10.0.9.1 port 5001'
+p14
+aS'[  5] local 10.0.8.1 port 48790 connected with 10.0.9.1 port 5001'
+p15
+aS'[ ID] Interval       Transfer     Bandwidth'
+p16
+aS'[  8]  0.0-10.0 sec   813 KBytes   664 Kbits/sec'
+p17
+aS'[ 10]  0.0-10.0 sec   877 KBytes   716 Kbits/sec'
+p18
+aS'[  3]  0.0-10.1 sec   871 KBytes   709 Kbits/sec'
+p19
+aS'[  5]  0.0-10.1 sec   860 KBytes   698 Kbits/sec'
+p20
+aS'[  9]  0.0-10.1 sec   868 KBytes   704 Kbits/sec'
+p21
+aS'[  6]  0.0-10.1 sec   877 KBytes   709 Kbits/sec'
+p22
+aS'[  4]  0.0-10.1 sec   877 KBytes   708 Kbits/sec'
+p23
+aS'[  7]  0.0-10.1 sec   871 KBytes   703 Kbits/sec'
+p24
+aS'[SUM]  0.0-10.1 sec  6.75 MBytes  5.58 Mbits/sec'
+p25
+aS''
+p26
+aa(lp27
+S'------------------------------------------------------------'
+p28
+aS'Client connecting to 10.0.19.1, TCP port 5001'
+p29
+aS'TCP window size: 85.3 KByte (default)'
+p30
+aS'------------------------------------------------------------'
+p31
+aS'[  6] local 10.0.5.1 port 44188 connected with 10.0.19.1 port 5001'
+p32
+aS'[  7] local 10.0.5.1 port 44190 connected with 10.0.19.1 port 5001'
+p33
+aS'[  8] local 10.0.5.1 port 44192 connected with 10.0.19.1 port 5001'
+p34
+aS'[  5] local 10.0.5.1 port 44186 connected with 10.0.19.1 port 5001'
+p35
+aS'[  3] local 10.0.5.1 port 44182 connected with 10.0.19.1 port 5001'
+p36
+aS'[ 10] local 10.0.5.1 port 44196 connected with 10.0.19.1 port 5001'
+p37
+aS'[  4] local 10.0.5.1 port 44184 connected with 10.0.19.1 port 5001'
+p38
+aS'[  9] local 10.0.5.1 port 44194 connected with 10.0.19.1 port 5001'
+p39
+aS'[ ID] Interval       Transfer     Bandwidth'
+p40
+aS'[  4]  0.0-10.1 sec   877 KBytes   714 Kbits/sec'
+p41
+aS'[  6]  0.0-10.1 sec   851 KBytes   692 Kbits/sec'
+p42
+aS'[  8]  0.0-10.1 sec   877 KBytes   712 Kbits/sec'
+p43
+aS'[  5]  0.0-10.1 sec   877 KBytes   711 Kbits/sec'
+p44
+aS'[  3]  0.0-10.1 sec   877 KBytes   710 Kbits/sec'
+p45
+aS'[ 10]  0.0-10.1 sec   877 KBytes   710 Kbits/sec'
+p46
+aS'[  9]  0.0-10.1 sec   871 KBytes   704 Kbits/sec'
+p47
+aS'[  7]  0.0-10.2 sec   880 KBytes   709 Kbits/sec'
+p48
+aS'[SUM]  0.0-10.2 sec  6.82 MBytes  5.63 Mbits/sec'
+p49
+ag26
+aa(lp50
+S'------------------------------------------------------------'
+p51
+aS'Client connecting to 10.0.14.1, TCP port 5001'
+p52
+aS'TCP window size: 85.3 KByte (default)'
+p53
+aS'------------------------------------------------------------'
+p54
+aS'[  5] local 10.0.4.1 port 36900 connected with 10.0.14.1 port 5001'
+p55
+aS'[  3] local 10.0.4.1 port 36896 connected with 10.0.14.1 port 5001'
+p56
+aS'[ 10] local 10.0.4.1 port 36908 connected with 10.0.14.1 port 5001'
+p57
+aS'[  4] local 10.0.4.1 port 36894 connected with 10.0.14.1 port 5001'
+p58
+aS'[  7] local 10.0.4.1 port 36902 connected with 10.0.14.1 port 5001'
+p59
+aS'[  8] local 10.0.4.1 port 36904 connected with 10.0.14.1 port 5001'
+p60
+aS'[  9] local 10.0.4.1 port 36906 connected with 10.0.14.1 port 5001'
+p61
+aS'[  6] local 10.0.4.1 port 36898 connected with 10.0.14.1 port 5001'
+p62
+aS'[ ID] Interval       Transfer     Bandwidth'
+p63
+aS'[  3]  0.0-10.1 sec   877 KBytes   713 Kbits/sec'
+p64
+aS'[ 10]  0.0-10.1 sec   877 KBytes   712 Kbits/sec'
+p65
+aS'[  7]  0.0-10.1 sec   877 KBytes   711 Kbits/sec'
+p66
+aS'[  8]  0.0-10.1 sec   877 KBytes   710 Kbits/sec'
+p67
+aS'[  9]  0.0-10.1 sec   877 KBytes   709 Kbits/sec'
+p68
+aS'[  5]  0.0-10.1 sec   877 KBytes   708 Kbits/sec'
+p69
+aS'[  6]  0.0-10.1 sec   877 KBytes   708 Kbits/sec'
+p70
+aS'[  4]  0.0-10.2 sec   871 KBytes   701 Kbits/sec'
+p71
+aS'[SUM]  0.0-10.2 sec  6.84 MBytes  5.64 Mbits/sec'
+p72
+ag26
+aa(lp73
+S'------------------------------------------------------------'
+p74
+aS'Client connecting to 10.0.15.1, TCP port 5001'
+p75
+aS'TCP window size: 85.3 KByte (default)'
+p76
+aS'------------------------------------------------------------'
+p77
+aS'[  8] local 10.0.2.1 port 56954 connected with 10.0.15.1 port 5001'
+p78
+aS'[  3] local 10.0.2.1 port 56944 connected with 10.0.15.1 port 5001'
+p79
+aS'[  7] local 10.0.2.1 port 56952 connected with 10.0.15.1 port 5001'
+p80
+aS'[  5] local 10.0.2.1 port 56948 connected with 10.0.15.1 port 5001'
+p81
+aS'[  6] local 10.0.2.1 port 56950 connected with 10.0.15.1 port 5001'
+p82
+aS'[  9] local 10.0.2.1 port 56956 connected with 10.0.15.1 port 5001'
+p83
+aS'[ 10] local 10.0.2.1 port 56958 connected with 10.0.15.1 port 5001'
+p84
+aS'[  4] local 10.0.2.1 port 56946 connected with 10.0.15.1 port 5001'
+p85
+aS'[ ID] Interval       Transfer     Bandwidth'
+p86
+aS'[  3]  0.0-10.1 sec   877 KBytes   713 Kbits/sec'
+p87
+aS'[  7]  0.0-10.1 sec   877 KBytes   712 Kbits/sec'
+p88
+aS'[  6]  0.0-10.1 sec   877 KBytes   711 Kbits/sec'
+p89
+aS'[  9]  0.0-10.1 sec   877 KBytes   710 Kbits/sec'
+p90
+aS'[  4]  0.0-10.1 sec   877 KBytes   709 Kbits/sec'
+p91
+aS'[ 10]  0.0-10.1 sec   877 KBytes   709 Kbits/sec'
+p92
+aS'[  8]  0.0-10.1 sec   877 KBytes   708 Kbits/sec'
+p93
+aS'[  5]  0.0-10.2 sec   871 KBytes   701 Kbits/sec'
+p94
+aS'[SUM]  0.0-10.2 sec  6.84 MBytes  5.64 Mbits/sec'
+p95
+ag26
+aa(lp96
+S'------------------------------------------------------------'
+p97
+aS'Client connecting to 10.0.1.1, TCP port 5001'
+p98
+aS'TCP window size: 85.3 KByte (default)'
+p99
+aS'------------------------------------------------------------'
+p100
+aS'[ 10] local 10.0.18.1 port 55324 connected with 10.0.1.1 port 5001'
+p101
+aS'[  5] local 10.0.18.1 port 55314 connected with 10.0.1.1 port 5001'
+p102
+aS'[  3] local 10.0.18.1 port 55310 connected with 10.0.1.1 port 5001'
+p103
+aS'[  9] local 10.0.18.1 port 55322 connected with 10.0.1.1 port 5001'
+p104
+aS'[  6] local 10.0.18.1 port 55316 connected with 10.0.1.1 port 5001'
+p105
+aS'[  4] local 10.0.18.1 port 55312 connected with 10.0.1.1 port 5001'
+p106
+aS'[  7] local 10.0.18.1 port 55318 connected with 10.0.1.1 port 5001'
+p107
+aS'[  8] local 10.0.18.1 port 55320 connected with 10.0.1.1 port 5001'
+p108
+aS'write failed: Connection reset by peer'
+p109
+aS'[ ID] Interval       Transfer     Bandwidth'
+p110
+aS'[  8]  0.0-10.0 sec   860 KBytes   705 Kbits/sec'
+p111
+aS'[  6]  0.0-10.0 sec   860 KBytes   702 Kbits/sec'
+p112
+aS'[  4]  0.0-10.1 sec   877 KBytes   714 Kbits/sec'
+p113
+aS'[  7]  0.0-10.1 sec   860 KBytes   700 Kbits/sec'
+p114
+aS'[  5]  0.0-10.1 sec   877 KBytes   711 Kbits/sec'
+p115
+aS'[  3]  0.0-10.1 sec   877 KBytes   710 Kbits/sec'
+p116
+aS'[  9]  0.0-10.1 sec   877 KBytes   710 Kbits/sec'
+p117
+aS'[ 10]  0.0-10.2 sec   861 KBytes   694 Kbits/sec'
+p118
+aS'[SUM]  0.0-10.2 sec  6.78 MBytes  5.60 Mbits/sec'
+p119
+ag26
+aa(lp120
+S'------------------------------------------------------------'
+p121
+aS'Client connecting to 10.0.17.1, TCP port 5001'
+p122
+aS'TCP window size: 85.3 KByte (default)'
+p123
+aS'------------------------------------------------------------'
+p124
+aS'[  7] local 10.0.10.1 port 57494 connected with 10.0.17.1 port 5001'
+p125
+aS'[  4] local 10.0.10.1 port 57488 connected with 10.0.17.1 port 5001'
+p126
+aS'[  8] local 10.0.10.1 port 57496 connected with 10.0.17.1 port 5001'
+p127
+aS'[  3] local 10.0.10.1 port 57486 connected with 10.0.17.1 port 5001'
+p128
+aS'[ 10] local 10.0.10.1 port 57500 connected with 10.0.17.1 port 5001'
+p129
+aS'[  6] local 10.0.10.1 port 57492 connected with 10.0.17.1 port 5001'
+p130
+aS'[  5] local 10.0.10.1 port 57490 connected with 10.0.17.1 port 5001'
+p131
+aS'[  9] local 10.0.10.1 port 57498 connected with 10.0.17.1 port 5001'
+p132
+aS'[ ID] Interval       Transfer     Bandwidth'
+p133
+aS'[  5]  0.0-10.1 sec   877 KBytes   714 Kbits/sec'
+p134
+aS'[  9]  0.0-10.1 sec   877 KBytes   713 Kbits/sec'
+p135
+aS'[  4]  0.0-10.1 sec   877 KBytes   711 Kbits/sec'
+p136
+aS'[  8]  0.0-10.1 sec   877 KBytes   711 Kbits/sec'
+p137
+aS'[  3]  0.0-10.1 sec   877 KBytes   710 Kbits/sec'
+p138
+aS'[ 10]  0.0-10.1 sec   877 KBytes   710 Kbits/sec'
+p139
+aS'[  6]  0.0-10.1 sec   877 KBytes   709 Kbits/sec'
+p140
+aS'[  7]  0.0-10.2 sec   833 KBytes   672 Kbits/sec'
+p141
+aS'[SUM]  0.0-10.2 sec  6.81 MBytes  5.62 Mbits/sec'
+p142
+ag26
+aa(lp143
+S'------------------------------------------------------------'
+p144
+aS'Client connecting to 10.0.13.1, TCP port 5001'
+p145
+aS'TCP window size: 85.3 KByte (default)'
+p146
+aS'------------------------------------------------------------'
+p147
+aS'[  7] local 10.0.0.1 port 44578 connected with 10.0.13.1 port 5001'
+p148
+aS'[  5] local 10.0.0.1 port 44576 connected with 10.0.13.1 port 5001'
+p149
+aS'[  4] local 10.0.0.1 port 44572 connected with 10.0.13.1 port 5001'
+p150
+aS'[  3] local 10.0.0.1 port 44570 connected with 10.0.13.1 port 5001'
+p151
+aS'[  6] local 10.0.0.1 port 44574 connected with 10.0.13.1 port 5001'
+p152
+aS'[  8] local 10.0.0.1 port 44580 connected with 10.0.13.1 port 5001'
+p153
+aS'[  9] local 10.0.0.1 port 44582 connected with 10.0.13.1 port 5001'
+p154
+aS'[ 10] local 10.0.0.1 port 44584 connected with 10.0.13.1 port 5001'
+p155
+aS'[ ID] Interval       Transfer     Bandwidth'
+p156
+aS'[  3]  0.0-10.0 sec   877 KBytes   716 Kbits/sec'
+p157
+aS'[  6]  0.0-10.0 sec   877 KBytes   715 Kbits/sec'
+p158
+aS'[  8]  0.0-10.1 sec   860 KBytes   700 Kbits/sec'
+p159
+aS'[  9]  0.0-10.1 sec   860 KBytes   699 Kbits/sec'
+p160
+aS'[ 10]  0.0-10.1 sec   860 KBytes   699 Kbits/sec'
+p161
+aS'[  7]  0.0-10.1 sec   896 KBytes   727 Kbits/sec'
+p162
+aS'[  5]  0.0-10.1 sec   877 KBytes   711 Kbits/sec'
+p163
+aS'[  4]  0.0-10.1 sec   877 KBytes   710 Kbits/sec'
+p164
+aS'[SUM]  0.0-10.1 sec  6.82 MBytes  5.65 Mbits/sec'
+p165
+ag26
+aa(lp166
+S'------------------------------------------------------------'
+p167
+aS'Client connecting to 10.0.12.1, TCP port 5001'
+p168
+aS'TCP window size: 85.3 KByte (default)'
+p169
+aS'------------------------------------------------------------'
+p170
+aS'[  7] local 10.0.16.1 port 54918 connected with 10.0.12.1 port 5001'
+p171
+aS'[  5] local 10.0.16.1 port 54914 connected with 10.0.12.1 port 5001'
+p172
+aS'[  6] local 10.0.16.1 port 54916 connected with 10.0.12.1 port 5001'
+p173
+aS'[  8] local 10.0.16.1 port 54920 connected with 10.0.12.1 port 5001'
+p174
+aS'[  3] local 10.0.16.1 port 54910 connected with 10.0.12.1 port 5001'
+p175
+aS'[ 10] local 10.0.16.1 port 54924 connected with 10.0.12.1 port 5001'
+p176
+aS'[  4] local 10.0.16.1 port 54912 connected with 10.0.12.1 port 5001'
+p177
+aS'[  9] local 10.0.16.1 port 54922 connected with 10.0.12.1 port 5001'
+p178
+aS'[ ID] Interval       Transfer     Bandwidth'
+p179
+aS'[  6]  0.0-10.0 sec   877 KBytes   718 Kbits/sec'
+p180
+aS'[  4]  0.0-10.0 sec   877 KBytes   715 Kbits/sec'
+p181
+aS'[  5]  0.0-10.1 sec   877 KBytes   713 Kbits/sec'
+p182
+aS'[  8]  0.0-10.1 sec   877 KBytes   711 Kbits/sec'
+p183
+aS'[  3]  0.0-10.1 sec   877 KBytes   711 Kbits/sec'
+p184
+aS'[ 10]  0.0-10.1 sec   877 KBytes   710 Kbits/sec'
+p185
+aS'[  9]  0.0-10.1 sec   871 KBytes   704 Kbits/sec'
+p186
+aS'[  7]  0.0-10.2 sec   860 KBytes   694 Kbits/sec'
+p187
+aS'[SUM]  0.0-10.2 sec  6.83 MBytes  5.64 Mbits/sec'
+p188
+ag26
+aa(lp189
+S'------------------------------------------------------------'
+p190
+aS'Client connecting to 10.0.7.1, TCP port 5001'
+p191
+aS'TCP window size: 85.3 KByte (default)'
+p192
+aS'------------------------------------------------------------'
+p193
+aS'[  7] local 10.0.3.1 port 37202 connected with 10.0.7.1 port 5001'
+p194
+aS'[  9] local 10.0.3.1 port 37206 connected with 10.0.7.1 port 5001'
+p195
+aS'[  5] local 10.0.3.1 port 37198 connected with 10.0.7.1 port 5001'
+p196
+aS'[  6] local 10.0.3.1 port 37200 connected with 10.0.7.1 port 5001'
+p197
+aS'[  4] local 10.0.3.1 port 37196 connected with 10.0.7.1 port 5001'
+p198
+aS'[  3] local 10.0.3.1 port 37194 connected with 10.0.7.1 port 5001'
+p199
+aS'[  8] local 10.0.3.1 port 37204 connected with 10.0.7.1 port 5001'
+p200
+aS'[ 10] local 10.0.3.1 port 37208 connected with 10.0.7.1 port 5001'
+p201
+aS'[ ID] Interval       Transfer     Bandwidth'
+p202
+aS'[  3]  0.0-10.0 sec   877 KBytes   715 Kbits/sec'
+p203
+aS'[  7]  0.0-10.1 sec   877 KBytes   714 Kbits/sec'
+p204
+aS'[ 10]  0.0-10.1 sec   877 KBytes   714 Kbits/sec'
+p205
+aS'[  5]  0.0-10.1 sec   877 KBytes   712 Kbits/sec'
+p206
+aS'[  6]  0.0-10.1 sec   877 KBytes   711 Kbits/sec'
+p207
+aS'[  4]  0.0-10.1 sec   877 KBytes   710 Kbits/sec'
+p208
+aS'[  8]  0.0-10.1 sec   877 KBytes   709 Kbits/sec'
+p209
+aS'[  9]  0.0-10.1 sec   877 KBytes   708 Kbits/sec'
+p210
+aS'[SUM]  0.0-10.1 sec  6.85 MBytes  5.66 Mbits/sec'
+p211
+ag26
+aa(lp212
+S'------------------------------------------------------------'
+p213
+aS'Client connecting to 10.0.11.1, TCP port 5001'
+p214
+aS'TCP window size: 85.3 KByte (default)'
+p215
+aS'------------------------------------------------------------'
+p216
+aS'[  8] local 10.0.6.1 port 51252 connected with 10.0.11.1 port 5001'
+p217
+aS'[  6] local 10.0.6.1 port 51246 connected with 10.0.11.1 port 5001'
+p218
+aS'[  9] local 10.0.6.1 port 51254 connected with 10.0.11.1 port 5001'
+p219
+aS'[ 10] local 10.0.6.1 port 51256 connected with 10.0.11.1 port 5001'
+p220
+aS'[  4] local 10.0.6.1 port 51244 connected with 10.0.11.1 port 5001'
+p221
+aS'[  7] local 10.0.6.1 port 51250 connected with 10.0.11.1 port 5001'
+p222
+aS'[  5] local 10.0.6.1 port 51248 connected with 10.0.11.1 port 5001'
+p223
+aS'[  3] local 10.0.6.1 port 51242 connected with 10.0.11.1 port 5001'
+p224
+aS'[ ID] Interval       Transfer     Bandwidth'
+p225
+aS'[  5]  0.0-10.0 sec   813 KBytes   663 Kbits/sec'
+p226
+aS'[  8]  0.0-10.1 sec   877 KBytes   714 Kbits/sec'
+p227
+aS'[  6]  0.0-10.1 sec   877 KBytes   713 Kbits/sec'
+p228
+aS'[ 10]  0.0-10.1 sec   877 KBytes   711 Kbits/sec'
+p229
+aS'[  4]  0.0-10.1 sec   877 KBytes   710 Kbits/sec'
+p230
+aS'[  7]  0.0-10.1 sec   877 KBytes   710 Kbits/sec'
+p231
+aS'[  3]  0.0-10.1 sec   877 KBytes   708 Kbits/sec'
+p232
+aS'[  9]  0.0-10.2 sec   877 KBytes   707 Kbits/sec'
+p233
+aS'[SUM]  0.0-10.2 sec  6.79 MBytes  5.60 Mbits/sec'
+p234
+ag26
+aasS'nflows'
+p235
+S'8'
+p236
+sS'algo'
+p237
+S'kshort'
+p238
+s.
