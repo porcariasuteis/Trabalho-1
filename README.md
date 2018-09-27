@@ -120,7 +120,7 @@ make install
 
 **7- Conectar a instância com TCP (Via painel de controle do google cloud ou cliente SSH de sua preferência)**
 
-**Clonar o git do projeto:**
+Clonar o git do projeto:
 ```
 git clone https://github.com/fernandonakayama/TP1.git
 cd TP1/
@@ -137,8 +137,9 @@ sudo sh ./fattree.sh
 O resultado será exibido após a execução do script.
 <p align="left">  <img src="https://image.ibb.co/ioX1cU/fat_1.png" alt="dados_originais" border="0"></p>
 
-**8- Conectar a instância com MPTCP (Via painel de controle do google cloud ou cliente SSH de sua preferência)
-**Clonar o git do projeto:**
+**8- Conectar a instância com MPTCP (Via painel de controle do google cloud ou cliente SSH de sua preferência)**
+
+Clonar o git do projeto:
 ```
 git clone https://github.com/fernandonakayama/TP1.git
 cd TP1/
