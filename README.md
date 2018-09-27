@@ -7,9 +7,11 @@
 # Desenvolvimento
 
 **Que problema a Jellyfish estava tentando resolver? Qual era o estado da arte no momento em que o artigo foi publicado?**
+
 Segundo os autores, o principal problema encontrado nas topologias direcionadas a data centers na época do artigo, era a expansão incremental. As topologias para redes de alta capacidade em 2012 não contornavam a expansão incremental de forma simplificada, sendo necessária uma grande troca de elementos da rede e de cabeamento. As propostas mais comuns eram o fat-tree (folded-Clos), estruturas que utilizavam servidores para encaminhamento e redes ópticas. Existiam outras propostas que tratavam o problema de ampliação, porém algumas falhas foram apontadas pelos autores em todas elas. O MDCube permitia o crescimento de forma gradual mas muito rudimentar, o Dcell e o Bcube permitia o crescimento somente para um numero de servidores previamente conhecido. Existiam ainda propostas similares ao Jellyfish para randomizar as novas conexões, porém elas seriam inferiores ao Jellyfish por necessitarem alguma correlação entre os dispositivos de fim.
 
 **Um breve resumo dos métodos e resultados do artigo original (com foco especial na Figura 9 e na Tabela 1).**
+
 Além do problema da expansão incremental a jellyfish tinha como objetivo melhorar o throughput em topologias baseadas em árvore. Os autores explicam que conseguiram estas duas características principais, através de um sistema randômico de conexões para novos ativos ou servidores. A flexibilidade de conexão para novos componentes permitiria agregar ativos independente da quantia de portas, trazendo grande vantagem sobre as tecnologias baseadas em árvore. Para adicionar um novo ativo na rede, aleatoriamente é escolhido um link na rede atual, este link é removido liberando automaticamente duas portas. As duas portas liberadas são conectadas ao novo ativo. Este processo se repete enquanto houverem portas disponíveis no novo ativo (duas ao menos).
 <p align="center">  <img src="https://image.ibb.co/bHjMrp/jelly.png" alt="jelly" border="0"></p>
 Segundo os autores, o redimensionamento também seria vantajoso financeiramente e não traria grandes dificuldades para alterar o layout do cabeamento. O aumento do throughput seria outro benefício, no artigo os autores especificam 25% a mais de servidores utilizando toda a largura de banda quando comparado com o Fat-Tree com os mesmos equipamentos, uma das razões é que a topologia do Jellyfish permitiria um melhor uso dos algoritmos de roteamento com multi caminhos. Para ilustrar melhor podemos observar a Figura 1 do trabalho aonde notamos que o Jellyfish precisa de menos saltos (caminhos mais curtos) para alcançar toda a amplitude da rede, porém é valido salientar que a possibilidade de existirem múltiplos caminhos será maior de acordo com o tamanho (quantia de ativos, servidores, etc) da rede.
@@ -20,7 +22,8 @@ Na Figura 9 notamos exatamente como a utilização do algoritmo k-shortest se be
 
 <p align="center">  <img src="https://image.ibb.co/cAeZE9/dados_originais.png" alt="dados_originais" border="0"></p>
 
-##### Detalhe sobre sua abordagem para reproduzir a figura. Se você escolheu uma plataforma ou ferramenta específica, explique por que você fez essa escolha. Destaque as vantagens da sua abordagem, bem como quaisquer inconvenientes. Houve algum desafio que você acertou ou suposições que você precisava fazer?
+**Detalhe sobre sua abordagem para reproduzir a figura. Se você escolheu uma plataforma ou ferramenta específica, explique por que você fez essa escolha. Destaque as vantagens da sua abordagem, bem como quaisquer inconvenientes. Houve algum desafio que você acertou ou suposições que você precisava fazer?**
+
 Para reprodução da figura o simulador utilizado foi o Mininet na versão 2.2.2. disponível em http://mininet.org/download/ e  Python 3.5.2 instalado dos repositórios do Debian Linux. A escolha do Mininet foi baseada na ampla quantidade de exemplos e modelos disponíveis. Os experimentos foram executados em servidores criados na Google Cloud devido ao maior poder de processamento a possibilidade de execução de experimentos longos sem a necessidade de paralisação. Foram utilizadas duas instâncias de máquinas virtuais conforme segue:
 
 Máquina n1-standard-4 (4 vCPUs, 15 GB de memória) e 30 GB de disco rodando Debian GNU/Linux 9 Kernel 4.9.0-8
@@ -43,6 +46,7 @@ Os problemas encontrados com a topologia Fat-Tree e o simulador Mininet estão r
 Durante o desenvolvimento do trabalho, várias fontes foram consultadas, incluindo o vídeo [Fishbowl Seminar: Jellyfish: Networking Data Centers Randomly](https://youtu.be/yEjcZC34qNo "Fishbowl Seminar: Jellyfish: Networking Data Centers Randomly") de um dos autores P. Brighten Godfrey, aonde algumas considerações são expostas de forma distinta ao trabalho original. Godfrey afirma que a topologia o protocolo ECMP não deve ser considerado quando utilizamos a topologia Jellyfish, e que o TCP e o MPTCP funcionam de forma muito próxima para a Jellyfish, sendo o mais importante o algoritmo de roteamento. Muito embora seja possível observar tendências confirmem estas considerações, elas não estão explícitas no artigo. Outro ponto não explicado integralmente se refere a utilização de quantidades de servidores diferentes na comparação da Jellyfish e da Fat-tree.
 
 **Qual o resultado que você conseguiu? Correspondeu ao papel original?**
+
 Os resultados obtidos foram fiéis ao original em vários pontos, porém foram discrepantes em outros. O gráfico na Figura 9 é muito próximo do original, uma vez que utiliza métodos matemáticos para calcular a diversidade de caminhos de acordo com a quantidade de links. Para construção da Figura 9, podemos utilizar a mesma topologia do trabalho original, com 686 servidores conforme os testes realizados no artigo. 
 
 <p align="center">  <img src="https://image.ibb.co/jxzO7U/figure9repro.png" alt="dados_originais" border="0"></p>
